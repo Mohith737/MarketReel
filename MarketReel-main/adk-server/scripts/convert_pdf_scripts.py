@@ -21,9 +21,9 @@ def slugify(value: str) -> str:
 def cleaned_title(filename: str) -> str:
     base = Path(filename).stem
     base = re.sub(r"[\-_]+", " ", base).strip()
-    tokens = [t for t in base.split() if t.lower() not in {"script", "pdf"}]
+    tokens=see .env file
     if tokens and tokens[-1].lower() == "the":
-        tokens = tokens[:-1]
+        tokens=see .env file
     title = " ".join(tokens).strip()
     return title.title() if title else "Untitled"
 
@@ -109,3 +109,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

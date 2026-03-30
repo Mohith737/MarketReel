@@ -3,12 +3,14 @@
     "username": "admin",
     "email": "admin@marketlogic.ai",
     "full_name": "MarketLogic Admin",
-    "password": "admin123"
+    "password": "see .env file"
   },
   {
     "username": "analyst",
     "email": "analyst@marketlogic.ai",
     "full_name": "Distribution Analyst",
-    "password": "analyst123"
+    "password": "see .env file"
   }
 ]
+
+

@@ -112,14 +112,14 @@ and performs a full reset of MarketLogic domain tables before inserting fresh da
 Example:
 ```
 ENV=development
-DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5433/marketreeldb
-SECRET_KEY=app-scaffold-dev-secret
-GOOGLE_API_KEY=your-google-key
+DATABASE_URL=see .env file
+SECRET_KEY=see .env file
+GOOGLE_API_KEY=see .env file
 GOOGLE_GENAI_USE_VERTEXAI=false
 ADK_BASE_URL=http://localhost:8011
-ADK_API_KEY=your-shared-service-key
+ADK_API_KEY=see .env file
 BACKEND_BASE_URL=http://localhost:8010
-INTERNAL_API_KEY=your-internal-shared-key
+INTERNAL_API_KEY=see .env file
 INTERNAL_API_NEXT_KEY=
 APP_NAME=marketlogic_adk
 ADK_MODEL=gemini-2.5-flash
@@ -205,3 +205,5 @@ To customize:
 - TypeScript: strict mode, `PascalCase` components, `camelCase` utilities
 - Backend layering: Routes → Services → DB (enforced)
 - Conventional Commits: `feat:`, `fix:`, `refactor:`
+
+

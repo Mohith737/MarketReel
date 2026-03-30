@@ -42,7 +42,7 @@ async def seed_users(db: AsyncSession) -> int:
                 username=user["username"],
                 email=user["email"],
                 full_name=user.get("full_name"),
-                password_hash=hash_password(user["password"]),
+                password_hash=see .env file
             )
         )
         created += 1
@@ -55,7 +55,7 @@ async def seed_users(db: AsyncSession) -> int:
 def _normalize_user(raw: dict[str, object]) -> SeedUser | None:
     username = _get_str(raw, "username")
     email = _get_str(raw, "email")
-    password = _get_str(raw, "password")
+    password=see .env file
     if not username or not email or not password:
         return None
 
@@ -73,3 +73,5 @@ def _get_str(raw: dict[str, object], key: str) -> str | None:
     if isinstance(value, str):
         return value.strip() or None
     return None
+
+
